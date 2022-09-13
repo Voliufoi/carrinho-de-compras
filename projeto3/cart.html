@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="cart">
+        <div class="cart_body">
+            <div class="cart_header_title">
+                <div class="cart_left">
+                    <span class="cart_left--produto">Produto</span>
+                    <span class="cart_left--detalhe">Detalhe</span>
+                </div>
+                
+                <div class="cart_right">
+                    <span class="cart_right--qtd">Qtd</span>
+                    <span class="cart_right--total">Total</span>
+                </div>
+            </div>
+
+            <div class="cart_produto">
+                <div class="cart_left_img">
+                    <img src="./assets/raquete.webp" alt="Raquete de Tênis" title="Raquete de Tênis" class="cart_left_image">
+                </div>
+
+                <div class="cart_left_name">
+                    <span>Raquete de Tênis</span>
+                </div>
+
+                <div class="cart_right_qtd">
+                    <form id="quantidade" autocomplete="off">
+                        <a class="material-symbols-outlined">delete
+                        <input type="text" class="qtda" placeholder="0">
+                        </a>
+                    </form>
+                </div>
+                <div class="cart_right_total">
+                    <span class="price">R$1.142,70</span>
+                </div>
+            </div>
+
+            <div class="cart_bottom">
+                <div class="bottom_left">
+                    <a><button>Continuar comprando</button></a>
+                </div>
+                <div class="bottom_right">
+                    <a><button class="button2">Limpar carrinho</button></a>
+                    <a><button class="button3">Compartilhar</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="cart_fim">
+            <div class="cart_resume cart_header_title">
+                <span class="resume_text">subtotal</span>
+                <span class="resume_value">R$1.142,70</span>
+            </div>
+
+            <div class="cep_cartt">
+                <form id="cep_cart" method="post">
+                    <input type="tel" class="cep_text" value="" placeholder="CEP" autocomplete="off">
+                    <input type="submit" class="button4" value="Calcular frete">
+                </form>
+            </div>
+
+            <div class="cart_resume_total cart_header_title">
+                <span class="resume_total_text">total</span>
+                <span class="resume_total_value">R$1.142,70</span>
+            </div>
+
+            <div class="cart_resume_discount">
+                <form id="discount" method="post">
+                    <input type="tel" class="discount_text" value="" placeholder="Cupom de desconto" autocomplete="off">
+                    <input type="submit" class="button_discount" value="usar">
+                </form>
+            </div>
+
+            <div class="cart_description">
+                <div class="cart_resume_description">
+                    <span class="text_black">em até <span class="value">10x</span>de <span class="value">R$114,27</span>no cartão ou <span class="value">R$1.007,10 à vista</span></span>
+                </div>
+            </div>
+
+            <div class="cart_resume_finish">
+                <div class="button_bottom_finish">
+                    <a><button class="button5">finalizar compra</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
